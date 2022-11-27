@@ -1,0 +1,50 @@
+---
+title: "Final Project"
+author: "Jeremiah Hodges"
+date: "2022-11-26"
+output:
+  pdf_document:
+    fig_height: 4
+    fig_width: 6
+fontsize: 7pt
+---
+
+```{r, echo=FALSE, message=FALSE}
+#| label: load-pkg-data
+#| message: false
+#| warning: false
+library(tidyverse)
+library(tidymodels)
+library(dplyr)
+library(ggplot2)
+library(cowplot)
+library(knitr)
+library(recipes)
+library(caret)
+library(InformationValue)
+library(ISLR)
+library(MASS)
+library(nnet)
+library(Stat2Data)
+library(GGally)
+library(leaps)
+library(arm)
+library(MASS)
+library(stats)
+library(car)
+library(boot)
+library(arm)
+library(gam)
+library(readr)
+library(gridExtra)
+library(grid)
+library(ggplot2)
+library(lattice)
+```
+
+
+
+```{r, message = FALSE}
+processed_data<- read_csv("preprocessed_data.csv")
+
+```
